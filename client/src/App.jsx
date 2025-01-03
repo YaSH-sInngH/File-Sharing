@@ -56,7 +56,7 @@ function App() {
         <div className="flex h-screen pt-14">
           {/* Left Side - Content */}
           <div className="w-1/2 flex flex-col justify-center items-center bg-slate-100 dark:bg-slate-700">
-            <div className="text-3xl p-5">Hello, This is a File Sharing App.</div>
+            <div className="text-3xl p-5">Hello, This is a <span className="text-customOrange dark:text-customBlue">File Sharing</span> App.</div>
             <button
               className="p-3 border border-black bg-slate-200 dark:bg-gray-900 dark:border-gray-600 
               rounded-2xl hover:bg-slate-100 dark:hover:bg-gray-800 transition 
@@ -77,13 +77,13 @@ function App() {
                   href={result}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 dark:text-blue-300 underline"
+                  className="text-blue-500 dark:text-blue-500 bg-white p-2 underline"
                 >
                   {result}
                 </a>
                 <button
                   onClick={copyToClipboard}
-                  className="ml-2 flex items-center p-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 rounded transition duration-200"
+                  className="flex items-center p-2 bg-gray-200 dark:bg-gray-900 hover:bg-gray-300 dark:hover:bg-gray-800 transition duration-200"
                 >
                   {isCopied ? (
                     <>
